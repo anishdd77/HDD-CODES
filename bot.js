@@ -42,62 +42,7 @@ hastebin(content).then(r => {
      }
 });
 
-// Nomsy Paste 
-const h = require('nomsy-paste');
-client.on("message", async message => {
-     if(message.content.startsWith(prefix + "nomsy")){
- let content = '';
-             let fillter = m => m.author.id === message.author.id
-             await message.channel.send(" nomsy اكتب الكود الان للرفع علي ").then(e => {
-     message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
-     .then(co => {
-       content = co.first().content;
-        co.first().delete();
-h(content, 'js').then(res => {
-    e.edit(`Nomsy-Paste Link ${res}`);
-}).catch(console.error);
-     })
-             })
-     }
-     });
        
-// PasteBin
-var pbin = require('pbin-guest');
-       client.on("message", async message => {
-     if(message.content.startsWith(prefix + "pastebin")){
- let content = '';
-       let title = '';
-             let fillter = m => m.author.id === message.author.id
-             await message.channel.send(" pastebin اكتب الكود الان للرفع علي ").then(e => {
-     message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
-     .then(co => {
-       title = co.first().content;
-        co.first().delete();
-        e.edit(`اكتب الكود ناو`)
-    
-       message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
-       .then(col=> {
-         content = col.first().content;
-          col.first().delete();
-pbin.paste({title: title, code: content}, '870d2b8b253779b0827c7512b2fe6c51', function(link, err){
-    if(err){
-        e.edit(err)
-    }
-    e.edit(link)
-});
-     })
-     })
-             })
-     }
-     });
-
-client.on("message", message => {
-  let prefix = "#";
-  if (!(message.author.bot) && message.channel.type == "text")
-    if (message.content.startsWith(`${prefix}getScreenShareLink`))
-      if (message.member.voiceChannel) message.channel.send(`https://discordapp.com/channels/${message.guild.id}/${message.member.voiceChannel.id}`);
-      else message.channel.send(`**يجب عليك ان تكون في الروم الذي تريد جلب رابط مشاركة بالفيديو خاص به**`);
-});
 
 client.on('message', msg => {
 	var  prefix = "#";
@@ -153,60 +98,6 @@ client.on('message',async message => {
     })
     .catch(e => message.reply(`Couldn't find the package`));
   }
-});
-
-client.on("message", message => {
-  if (message.author.bot) return;
-    if(!message.channel.guild) return;
- let args = message.content.split(' ').slice(1).join(' ');
-    if(message.content.split(' ')[0] == prefix + 'pbc') {
-        if (!args[1]) {
-    message.channel.send(":white_check_mark: ***pbc <message>***");
-    return;
-    }
-        message.guild.members.forEach(member => {
-      if(!message.member.hasPermission('ADMINISTRATOR'))  return;
-      message.react("✅");
-            const w = ['./1.png',
-                       './2.png',
-                       './3.png',
-                       './4.png',
-                       './5.png',
-                       './6.png',
-                       './7.png',];
-            let Image = Canvas.Image,
-            canvas = new Canvas(400, 200),
-            ctx = canvas.getContext('2d');
-            ctx.patternQuality = 'bilinear';
-        ctx.filter = 'bilinear';
-        ctx.antialias = 'subpixel';
-        ctx.shadowColor = 'rgba(0, 0, 0, 0.4)';
-        ctx.shadowOffsetY = 2;
-        ctx.shadowBlur = 2;
-            fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
-            if (err) return console.log(err);
-            let BG = Canvas.Image;
-            let ground = new Image;
-            ground.src = Background;
-            ctx.drawImage(ground, 0, 0, 400, 200);
- 
-});
- let url = member.user.displayAvatarURL.endsWith(".webp") ? member.user.displayAvatarURL.slice(5, -20) + ".png" : member.user.displayAvatarURL;
-               jimp.read(url, (err, ava) => {
-                    if (err) return console.log(err);
-                    ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
-                        if (err) return console.log(err);
-                       
-                        ctx.font = '17px Arial';
-                              ctx.fontSize = '13px';
-                              ctx.fillStyle = "#FFFFFF";
-                              ctx.textAlign = "center";
-              ctx.fillText(`${args} ` , 200, 100);
-member.sendFile(canvas.toBuffer());
-});
-});
-});
-}
 });
 
 
