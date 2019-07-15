@@ -1754,7 +1754,7 @@ client.on('message',async message => {
 
 if(!message.channel.guild) return message.reply(' ');
 
-  let rank = message.guild.member(message.author).roles.find('name', '• Omni Support.', 'Support plus');
+  let rank = message.guild.member(message.author).roles.find('name', 'plus');
 
   if (!rank) return message.channel.send('🛑 **| يجب ان تمتلك رتبة سبورت لأستخدام هذا الأمر.**');
 
