@@ -101,7 +101,7 @@ client.on('message',async message => {
 });
 
 
-// Toxic Codes,// Toxic Codes,// Toxic Codes
+// ,// Toxic Codes,// Toxic Codes
 client.on('message', async message => {
     var command = message.content.toLowerCase().split(" ")[0];
     var prefix = '#';// Toxic Codes
@@ -375,7 +375,7 @@ client.on('message', msg => {
 
 client.on ("guildMemberAdd", member => {
   
-   var role = member.guild.roles.find ("name", "● members.");
+   var role = member.guild.roles.find ("name", "member");
    member.addRole (role);
   
 })
@@ -557,7 +557,7 @@ client.on('messageReactionRemove', (reaction, user) => {
    .setColor('RANDOM')
   .setTimestamp()
 
-  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("⦁`All types of codes in HDD CODES Server 💬`⦁",' ‎ ')
   .addField("❧  **#help-js-source    ➺      ⦁ قسم السورس الأساسي** ⦁",' ‎ ')
    .addField("❧  **#help-js-admin     ➺      ⦁ قسم الأكواد الإدارية** ⦁",' ‎ ')
     .addField("❧  **#help-js-general   ➺      ⦁ قسم الأكواد العامة*** ⦁",' ‎ ')
@@ -584,7 +584,7 @@ client.on('messageReactionRemove', (reaction, user) => {
    .setColor('RANDOM')
   .setTimestamp()
 
-  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("⦁`All types of codes in HD CODES Server 💬`⦁",' ‎ ')
     .addField("**#help-js-source-1  ➺      ⦁ السورس الأساسي**⦁",' ‎ ')
      .addField("**#help-js-source-2  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
       .addField("**#help-js-source-3  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
@@ -726,7 +726,7 @@ client.on('messageReactionRemove', (reaction, user) => {
    .setColor('RANDOM')
   .setTimestamp()
 
- .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+ .addField("⦁`All types of codes in HDD CODES Server 💬`⦁",' ‎ ')
  .addField("**#help-js-admin-1  ➺      ⦁ كود الباند**⦁",' ‎ ')
  .addField("**#help-js-admin-2  ➺      ⦁ كود الكيك** ⦁",' ‎ ')
  .addField("**#help-js-admin-3  ➺      ⦁ كود مسح الشات مع عدد وشبيه بالبروبوت** ⦁",' ‎ ')
@@ -744,7 +744,7 @@ client.on('messageReactionRemove', (reaction, user) => {
      .addField("**#help-js-admin-15 ➺ ⦁ كود التفعيل بي الريكشن ** ⦁",' ‎ ')
 	  
 	  
- .setFooter('Toxic Codes')
+ .setFooter('HDD CODES')
 
 
    message.channel.send({embed});
@@ -1048,7 +1048,7 @@ https://pastebin.com/EcGhrAMJ
    .setColor('RANDOM')
   .setTimestamp()
 
- .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+ .addField("⦁`All types of codes in HDD CODES Server 💬`⦁",' ‎ ')
  .addField("**#help-js-general-1  ➺      ⦁ كود البنق **⦁",' ‎ ')
  .addField("**#help-js-general-2  ➺      ⦁ كود القرعة ** ⦁",' ‎ ')
  .addField("**#help-js-general-3  ➺      ⦁ كود الافتار  ** ⦁",' ‎ ')	  
@@ -1058,7 +1058,7 @@ https://pastebin.com/EcGhrAMJ
  .addField("**#help-js-general-7  ➺      ⦁ كود صراحه** ⦁",' ‎ ')	  
 	  
 	  
- .setFooter('Toxic Codes')
+ .setFooter('HDD CODES')
 
    message.channel.send({embed});
 
@@ -1234,7 +1234,7 @@ https://pastebin.com/EcGhrAMJ
    .setColor('RANDOM')
   .setTimestamp()
 
-  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("⦁`All types of codes in HDD CODES Server 💬`⦁",' ‎ ')
   .addField("**#help-js-welcome-1  ➺      ⦁ كود ترحيب مع ذكر رقم العضو **⦁",' ‎ ')
    .addField("**#help-js-welcome-2  ➺      ⦁ كود الترحيب مع صورة ** ⦁",' ‎ ')
      .addField("**#help-js-welcome-3  ➺      ⦁ كود مغادرة العضو ** ⦁",' ‎ ')
@@ -1242,7 +1242,7 @@ https://pastebin.com/EcGhrAMJ
 
 	 
 		   
- .setFooter('Toxic Codes')
+ .setFooter('HDD CODES')
 
 
    message.channel.send({embed});
@@ -1344,11 +1344,11 @@ https://pastebin.com/EcGhrAMJ
    .setColor('RANDOM')
   .setTimestamp()
 
-  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("⦁`All types of codes in HDD CODES Server 💬`⦁",' ‎ ')
   .addField("**#help-js-help-1  ➺      ⦁ كود هلب مع امبد يرسل بنفس الشات **⦁",' ‎ ')
    .addField("**#help-js-help-2  ➺      ⦁ كود هلب مزخرف بدون امبد ويرسل عالخاص ** ⦁",' ‎ ')
 		   
- .setFooter('Toxic Codes')
+ .setFooter('HDD CODES')
 
 
    message.channel.send({embed});
@@ -1410,13 +1410,13 @@ https://pastebin.com/EcGhrAMJ
    .setColor('RANDOM')
   .setTimestamp()
 
-  .addField("⦁`All types of codes in Toxic CodesServer 💬`⦁",' ‎ ')
+  .addField("⦁`All types of codes in HDD CODES Server 💬`⦁",' ‎ ')
   .addField("**#help-js-bc-1  ➺      ⦁ برودكاست + للكل + مطور **⦁",' ‎ ')
   .addField("**#help-js-bc-2  ➺      ⦁ برودكاست + للكل + غير مطور ** ⦁",' ‎ ')
   .addField("**#help-js-bc-3  ➺      ⦁ برودكاست + للأونلاين + مع منشن + غير مطور **⦁",' ‎ ')
   .addField("**#help-js-bc-4  ➺      ⦁ برودكاست + للكل + مع منشن + غير مطور ** ⦁",' ‎ ')	   
 		   
- .setFooter('Toxic Codes')
+ .setFooter('HDD CODES')
 
 
    message.channel.send({embed});
@@ -1714,7 +1714,7 @@ client.on("message", message => {
 .addField("❖ ❖ #ping ➾ عرض سرعه اتصال البوت ⦁",' ‎ ')
 .addField("❖ ❖ #server ➾ معلومات عن السيرفر ⦁",' ‎ ')
 
- .setFooter('Toxic Codes')
+ .setFooter('HDD CODES')
 
 
    message.channel.send({embed});
@@ -1865,7 +1865,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**HDD CODES© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2013,7 +2013,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**HDD CODES© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2054,7 +2054,7 @@ client.on('message', message => {
  .setColor('RANDOM')
 .setTimestamp()
 
-.addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+.addField("⦁`All types of codes in HDD CODES Server 💬`⦁",' ‎ ')
 .addField("**#help-js-games-1  ➺      ⦁ لعبة اسئلة فورت نايت**⦁",' ‎ ')
  .addField("**#help-js-games-2  ➺      ⦁ لعبة صراحة** ⦁",' ‎ ')
      .addField("**#help-js-games-3  ➺      ⦁ لعبة كت تويت** ⦁",' ‎ ')
@@ -2065,7 +2065,7 @@ client.on('message', message => {
        .addField("**#help-js-games-8  ➺      ⦁ لعبة قرعة** ⦁",' ‎ ')
        .addField("**#help-js-games-9  ➺      ⦁ لعبة اكس او** ⦁",' ‎ ')
        .addField("**#help-js-games-10  ➺      ⦁ لعبة اسرع كتابة** ⦁",' ‎ ')
-   .setFooter('Toxic Cods')
+   .setFooter('HDD CODES')
 
 
    message.channel.send({embed});
@@ -2379,7 +2379,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**HDD CODES© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2528,7 +2528,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**HDD CODES© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -2701,7 +2701,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           jscodes.send(`@everyone | @here
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-**Toxic Codes© ⬇**
+**HDD CODES© ⬇**
 \`\`\`css
 ${thisMessage}\`\`\`
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
