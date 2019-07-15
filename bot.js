@@ -20,7 +20,8 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers ' Script By : n3k4a  Codes ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`#help-js | #help2 | #تقديم `,"http://twitch.tv/S-F")
+client.user.setGame(`#help-
+| #help2 | #تقديم `,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
  
 });
@@ -1757,7 +1758,7 @@ if(!message.channel.guild) return message.reply(' ');
 
   if (!rank) return message.channel.send('🛑 **| يجب ان تمتلك رتبة سبورت لأستخدام هذا الأمر.**');
 
-  let jscodes = message.guild.channels.find(`name`, "❖-discord-js");
+  let jscodes = message.guild.channels.find(`name`, "discord-js");
 
   if(!jscodes) return message.channel.send("❌لم اجد الروم الخاص بنشر الاكواد");
 
