@@ -9,9 +9,6 @@ var jimp = require('jimp');
 const prefix = "#";
 const adminprefix = "#";
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
 
 client.on('ready', () => {
    console.log(`----------------`);
@@ -23,50 +20,7 @@ client.on('ready', () => {
 client.user.setGame(`#help-
 | #help2 | #تقديم `,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
- 
 });
-
-client.on("message", async message => {
-     if(message.content.startsWith(prefix + "hastebin")){
- let content = '';
-             let fillter = m => m.author.id === message.author.id
-             await message.channel.send(" hastebin اكتب الكود الان للرفع علي ").then(e => {
-     message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
-     .then(co => {
-       content = co.first().content;
-        co.first().delete();
-hastebin(content).then(r => {
-    e.edit(`Hastebin Link ${r}`);
-}).catch(console.error);
-     })
-             })
-     }
-});
-
-       
-
-client.on('message', msg => {
-	var  prefix = "#";
- if (msg.content.startsWith(prefix + 'cal')) {
-    let args = msg.content.split(" ").slice(1);
-        const question = args.join(' ');
-    if (args.length < 1) {
-        msg.reply('Specify a equation, please.');
-} else {    let answer;
-    try {
-        answer = math.eval(question);
-    } catch (err) {
-        msg.reply(`Error: ${err}`);
-    }
-    
-    const embed = new Discord.RichEmbed()
-    .addField("**Input**: ",`**${question}**`, true)
-    .addField("**Output**: ",`**${answer}**`, true)
-    msg.channel.send(embed)
-    }
-};
-});
-
 
 client.on('message',async message => {
   if(message.author.bot || message.channel.type === 'dm') return;
